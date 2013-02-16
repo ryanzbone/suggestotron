@@ -1,3 +1,6 @@
+==The Details
+This is a simple voting app, created by following the Railsbridge curriculum during the Collegiate Web Developer's Club Rails bootcamp at OSU.
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
