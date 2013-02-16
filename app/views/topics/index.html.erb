@@ -10,9 +10,10 @@
 
 <% @topics.each do |topic| %>
   <tr>
-    <td><%= link_to topic.title, topic %></td>
+    <td><%= link_to topic.title, topic, :class => "link" %></td>
     <td><%= pluralize(topic.votes.length, "vote") %></td>
     <td><%= button_to '+1', votes_path(topic_id: topic.id), method: :post %></td>
+    <td><%= button_to '-1', votes_path(topic_id: topic.id), method: :post %></td>
     <td><%= link_to 'Delete', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
